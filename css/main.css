@@ -6,11 +6,21 @@ html, body {
 #content {
   position: absolute;
   background-color: white;
-  top: 1%;
-  right: 1%;
+  top: 0;
+  right: 0;
   padding: 1%;
-  width: 20%;
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
 }
 #Map {
   height: 100%;
+  width: 70%;
+}
+.delete {
+  font-weight: bolder;
+}
+.delete:hover {
+  cursor: pointer;
+  color: red;
 }

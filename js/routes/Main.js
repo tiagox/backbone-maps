@@ -14,6 +14,9 @@
       this.placeFormView = new App.Views.PlaceForm({
         collection: this.placesCollection
       });
+      this.placesListView = new App.Views.PlacesList({
+        collection: this.placesCollection
+      });
       this.mapView = new App.Views.Map({
         collection: this.placesCollection
       });
