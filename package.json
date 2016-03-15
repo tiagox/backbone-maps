@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/tiagox/backbone-maps/issues"
   },
-  "homepage": "https://github.com/tiagox/backbone-maps#readme"
+  "homepage": "https://github.com/tiagox/backbone-maps#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1"
+  }
 }
