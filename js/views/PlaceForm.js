@@ -8,7 +8,7 @@
     el: '#PlaceForm',
     events: {
       'click #add': 'addPlace',
-      'blur input': 'setButtonState'
+      'keyup input': 'setButtonState'
     },
 
     initialize: function () {
