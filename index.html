@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div id="map"></div>
+    <div id="Map"></div>
     <div id="content">
-      <form>
+      <form id="PlaceForm">
         <div class="form-group">
           <label for="lat">Latitude</label>
           <input type="text" id="lat" class="form-control" placeholder="Latitude">
@@ -24,7 +24,7 @@
           <input type="text" id="name" class="form-control" placeholder="Name">
         </div>
         <div class="form-group">
-          <button type="button" id="save" class="form-control">Save</button>
+          <button type="button" id="add" class="form-control">Add place</button>
         </div>
       </form>
     </div>
@@ -33,6 +33,12 @@
     <script type="text/javascript" src="bower_components/zepto/zepto.min.js"></script>
     <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/models/Place.js"></script>
+    <script type="text/javascript" src="js/collections/Places.js"></script>
+    <script type="text/javascript" src="js/views/PlaceForm.js"></script>
+    <script type="text/javascript" src="js/views/Map.js"></script>
+    <script type="text/javascript" src="js/routes/Main.js"></script>
 
   </body>
 </html>
