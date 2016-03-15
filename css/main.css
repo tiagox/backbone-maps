@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#content {
+  position: absolute;
+  background-color: white;
+  top: 1%;
+  right: 1%;
+  padding: 1%;
+  width: 20%;
+}
+#map {
+  height: 100%;
+}
