@@ -17,10 +17,3 @@ html, body {
   height: 100%;
   width: 70%;
 }
-.delete {
-  font-weight: bolder;
-}
-.delete:hover {
-  cursor: pointer;
-  color: red;
-}

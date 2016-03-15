@@ -19,7 +19,11 @@
      * Adds a new Place to the collection Places from the data filled in the form.
      */
     addPlace: function () {
-      this.collection.add(this.getPlaceObject());
+      var newPlace = new this.collection.model(this.getPlaceObject());
+
+      this.collection.add(newPlace);
+
+      newPlace.save({ marker: null });
     },
 
     /**

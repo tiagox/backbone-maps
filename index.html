@@ -31,10 +31,10 @@
     </div>
 
     <script type="text/template" id="PlacesListTemplate">
-      <table class="table table-condensed table-bordered">
-        <tr><th>Title</th><th>Lat</th><th>Lng</th></tr>
+      <table class="table table-condensed">
+        <tr><th></th><th>Title</th><th>Lat</th><th>Lng</th></tr>
         {{#places}}
-        <tr><td><span class="delete" data-id="{{id}}">Ⓧ</span> {{title}}</td><td>{{lat}}</td><td>{{lng}}</td></tr>
+        <tr><td><button class="delete btn btn-danger btn-xs" data-id="{{id}}">x</button></td><td>{{title}}</td><td>{{lat}}</td><td>{{lng}}</td></tr>
         {{/places}}
       </table>
     </script>
@@ -43,6 +43,7 @@
     <script type="text/javascript" src="bower_components/zepto/zepto.min.js"></script>
     <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="bower_components/backbone.localStorage/backbone.localStorage-min.js"></script>
     <script type="text/javascript" src="bower_components/mustache.js/mustache.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/models/Place.js"></script>
