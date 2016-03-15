@@ -27,10 +27,13 @@
      * @return {Object} Simple representation of a Place as a JS object
      */
     getPlaceObject: function () {
+      var rawLat = this.$el.find('#lat').val(),
+        rawLng = this.$el.find('#lng').val();
+
       return {
-        lat: this.$el.find('#lat').val(),
-        lng: this.$el.find('#lng').val(),
-        name: this.$el.find('#name').val()
+        lat: rawLat.length? parseFloat(rawLat) : null,
+        lng: rawLng.length? parseFloat(rawLng) : null,
+        title: this.$el.find('#title').val()
       };
     },
 
@@ -39,7 +42,7 @@
      */
     setButtonState: function () {
       var placeObject = this.getPlaceObject(),
-        disabled = !(placeObject.lat && placeObject.lng && placeObject.name);
+        disabled = !(placeObject.lat !== null && placeObject.lng !== null && placeObject.title);
 
       this.$el.find('#add').prop('disabled', disabled);
     }
